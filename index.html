@@ -1,0 +1,30 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>rclone (personal Google Drive client)</title>
+<meta name="description" content="A personal-use OAuth client that lets one person's copy of rclone back up files to their own Google Drive.">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<main>
+<h1>rclone (personal Google Drive client)</h1>
+<p class="muted">A personal-use OAuth client operated by Jacob Nye (GitHub: <a href="https://github.com/thecobb">thecobb</a>).</p>
+
+<h2>What this app is</h2>
+<p>This Google Cloud OAuth client lets the open-source file sync tool <a href="https://rclone.org">rclone</a>, running on its owner's own computer, back up files to the owner's own Google Drive and check that every uploaded file arrived intact by comparing checksums.</p>
+<p>It is not a public service. It has one user, its owner, and nobody else is invited to sign in to it.</p>
+
+<h2>What it accesses</h2>
+<ul>
+<li><strong>Google Drive, read-only</strong> (<code>drive.readonly</code>): lists the owner's Drive and reads file sizes and checksums so backups can be verified.</li>
+<li><strong>Files the app creates</strong> (<code>drive.file</code>): uploads backup files and can change only files it created itself.</li>
+</ul>
+<p>Everything runs locally in rclone on the owner's computer. There is no server and no third party in between.</p>
+
+<p><a href="privacy.html">Privacy policy</a> · <a href="terms.html">Terms of service</a></p>
+<footer>Last updated 31 October 2026.</footer>
+</main>
+</body>
+</html>
